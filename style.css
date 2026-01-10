@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0b132b;
+  color: #ffffff;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  padding: 10px;
+  text-align: center;
+  z-index: 10;
+}
+
+.nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(to bottom, #1c2541, #0b132b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+main {
+  padding: 80px 20px;
+}
+
+.glass-card {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 15px 0;
+}
+
+/* Vergleichsbalken */
+.bar-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.bar {
+  flex: 1;
+}
+
+.bar span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.bar-fill {
+  height: 20px;
+  background: #3a86ff;
+  width: 40%;
+  transition: width 0.5s ease;
+}
+
+/* Karte */
+.map-wrapper {
+  position: relative;
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.map-base {
+  width: 100%;
+}
+
+.drought-layer {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 80, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.impact-text {
+  margin-top: 15px;
+  font-weight: bold;
+}
