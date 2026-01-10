@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Dürre, Wasserknappheit & Menschenrechte</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="nav">
+  <a href="#hero">Start</a>
+  <a href="#vergleich">Vergleich</a>
+  <a href="#karte">Weltkarte</a>
+  <a href="#europa">Europa</a>
+  <a href="#story">Story</a>
+  <a href="#fazit">Fazit</a>
+</nav>
+
+<header id="hero" class="hero">
+  <div class="hero-overlay">
+    <h1>Dürre & Wasserrechte</h1>
+    <p>Wenn Wasser knapp wird, geraten Menschenrechte unter Druck</p>
+  </div>
+</header>
+
+<main>
+
+<section class="glass-card" id="vergleich">
+  <h2>Wasserstress: Heute vs. 2050</h2>
+  <p>
+    Wasserstress beschreibt, wie stark Wasserressourcen genutzt werden.
+    Je höher der Wert, desto knapper ist sauberes Trinkwasser.
+  </p>
+
+  <label>
+    Zeithorizont:
+    <strong><span id="yearLabel">Heute</span></strong>
+  </label>
+  <input type="range" min="0" max="1" step="1" value="0" id="yearSlider">
+
+  <div class="bar-wrapper">
+    <div class="bar">
+      <span>Heute</span>
+      <div class="bar-fill" id="barToday"></div>
+    </div>
+    <div class="bar">
+      <span>2050</span>
+      <div class="bar-fill" id="bar2050"></div>
+    </div>
+  </div>
+</section>
+
+<section class="glass-card" id="karte">
+  <h2>Interaktive Weltkarte: Ausbreitung der Dürre</h2>
+  <p>
+    Bewege den Regler und beobachte, wie sich Dürregebiete weltweit ausweiten.
+  </p>
+
+  <label>
+    Dürreintensität:
+    <strong><span id="droughtValue">0</span></strong>
+  </label>
+  <input type="range" min="0" max="100" value="0" id="droughtSlider">
+
+  <div class="map-wrapper">
+    <img src="bilder/world_map.png" class="map-base" alt="Weltkarte">
+    <div class="drought-layer" id="droughtLayer"></div>
+  </div>
+
+  <p id="mapText" class="impact-text">
+    Viele Regionen verfügen noch über ausreichend Wasser.
+  </p>
+</section>
+
+<section class="glass-card" id="europa">
+  <h2>Fallbeispiele in Europa</h2>
+
+  <h3>Spanien</h3>
+  <p>
+    Lang anhaltende Dürreperioden gefährden Landwirtschaft und Trinkwasserversorgung.
+    Stauseen erreichen historische Tiefstände.
+  </p>
+
+  <h3>Italien</h3>
+  <p>
+    Der Po führt immer weniger Wasser. Ernten fallen aus, Flüsse versalzen,
+    ganze Regionen leiden unter Wassermangel.
+  </p>
+
+  <h3>Deutschland</h3>
+  <p>
+    Sinkende Grundwasserspiegel bedrohen Wälder und Trinkwasserreserven,
+    besonders in Ostdeutschland.
+  </p>
+</section>
+
+<section class="glass-card" id="story">
+  <h2>Eine Familie im Jahr 2050</h2>
+  <p>
+    Die Familie Müller lebt in Brandenburg. Früher war Wasser selbstverständlich.
+    Heute wird es im Sommer rationiert.
+  </p>
+  <p>
+    Der Garten verdorrt, Felder liefern kaum Erträge.
+    Trinkwasser wird teurer und knapper.
+  </p>
+  <p>
+    Dürre bedroht grundlegende Menschenrechte:
+    das Recht auf Wasser, Nahrung und Gesundheit.
+  </p>
+</section>
+
+<section class="glass-card" id="fazit">
+  <h2>Fazit</h2>
+  <p>
+    Dürre ist keine ferne Krise.
+    Sie betrifft bereits heute Millionen Menschen – auch in Europa.
+    Der Schutz von Wasser ist der Schutz von Menschenrechten.
+  </p>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
